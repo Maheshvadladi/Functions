@@ -82,3 +82,66 @@ for i in a:
 
 '''for i in range(97,123):
     print(chr(i),end=" ")'''
+
+#annonymous functions (nameless functions)
+#write a function to calculate 2*x+5 where x=5
+'''def f(x):
+    print(2*x+5)
+f(5)'''
+
+'''def f( ):
+    x=int(input("Enter value: "))
+    print(2*x+5)
+f( )'''
+
+#syntax
+#a=lambda arg:expr
+
+'''a=lambda x:2*x+5
+print(a(5))'''
+
+'''a=int(input("Enter number: "))
+b=lambda x:2*x+5
+print(b(a))'''
+
+'''a=int(input("a value: "))
+b=int(input("b value: "))
+c=lambda a,b:a*b
+print(c(a,b))'''
+
+'''a=lambda a:a.upper()
+print(a("python"))'''
+
+'''a=input("Enter data: ")
+b=lambda a:a.upper()
+print(b(a))'''
+
+'''a=input("Enter first name: ")
+b=input("Enter last name: ")
+c=lambda a,b:(a+"  "+b).title()
+print(c(a,b))'''
+
+'''a,b=[str(x) for x in input("enter the names: ").split(",")]
+c=lambda a,b:(a+"  "+b).title()
+print(c(a,b))'''
+
+#filter()
+'''a=[2,5,7,8,9,11,20]'''
+'''for i in a:
+    if i%2==0:
+        print(i,end=" ")'''
+
+'''b=list(filter(lambda x:x%2==0, a))
+print(b)'''
+
+'''a=[[ ], ( ), set( ), { }, None, 3,4.5,"python",6+9j,True,False]
+b=list(filter(None,a))
+print(b)'''
+
+#map()-> each object from a collection and forms a new collection
+'''a=[10,5,7,8,15,20,40,100]
+b=[4,6,12,25,40,80,35,1,98]
+c=list(map(max,a,b))
+print(c)
+d=list(map(min,a,b))
+print(d)'''
