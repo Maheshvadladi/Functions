@@ -145,3 +145,40 @@ c=list(map(max,a,b))
 print(c)
 d=list(map(min,a,b))
 print(d)'''
+
+'''a=input("data1: ")
+b=input("data2: ")
+print(a+b)'''
+
+'''a,b=input("Enter data: ").split(",")
+print(a+b)'''
+
+'''a,b=[x for x in input("Enter data: ").split(",")]
+print(a+b)'''
+
+'''a=int(input("Enter a value: "))
+b=int(input("Enter b value: "))
+print(a+b)'''
+
+'''a,b=int(input("enter values: ").split(","))
+print(a+b)''' #we get error
+
+'''a,b=[int(x) for x in input("Enter values: ").split(",")]
+print(a+b)'''
+
+'''a,b=map(int, input("Enter values: ").split(","))
+print(a+b)'''
+
+'''a=list(map(int, input("Enter vaues: ").split(",")))
+print(a)'''
+
+'''a=tuple(map(int, input("Enter vaues: ").split(",")))
+print(a)'''
+
+'''a=set(map(int, input("Enter vaues: ").split(",")))
+print(a)'''
+
+#dictionary run time
+'''a=input("Enter the key and value pair: ")
+b=dict(i.split(":") for i in a.split(","))
+print(b)'''
